@@ -11,6 +11,10 @@ body {
   color: white;
 }
 
+#house {
+  opacity: 0;
+}
+
 
 .housemusic {
   color: linear-gradient(270deg, white, black, white, black, white, black, white, black, white, black);
