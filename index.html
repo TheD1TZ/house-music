@@ -11,11 +11,17 @@
 
   <body>
     <h1 class="housemusic">House Music</h1>
-    <iframe class="audio" loop autoplay>
+
+    <audio class="audio" loop autoplay="autoplay" controls id="audioelement">
       <source
         src="https://cumming.xyz/FUgA2/wOKayiXa61.mp3/raw"
         type="audio/mpeg"
       />
-    </iframe>
+    </audio>
+
+    <script>
+      var myAudio = document.getElementById("audioelement");
+      myAudio.play();
+    </script>
   </body>
 </html>
