@@ -9,20 +9,36 @@ body {
   justify-content: center;
   align-items: center;
   color: white;
+
 }
 
 #house {
-  opacity: 0;
+  color: black;
+  background-color: linear-gradient(270deg, #ff0000, #ffe300, #23ff00, #00fff6, #001cff, #dc00ff, #8200ff);
+  -webkit-animation: AnimationName 0.5s reverse infinite;
+  -moz-animation: AnimationName 0.5s reverse infinite;
+  animation: AnimationName 0.5s reverse infinite;
 
 }
 
 
 .housemusic {
   color: linear-gradient(270deg, white, black, white, black, white, black, white, black, white, black);
-  -webkit-animation: Kanker 1s ease infinite;
-  -moz-animation: Kanker 1s ease infinite;
-  animation: Kanker 1s ease infinite;
+  -webkit-animation: Kanker 1s infinite;
+  -moz-animation: Kanker 1s infinite;
+  animation: huis 0.1s infinite;
   font-size:8vw;
+}
+
+@keyframes huis {
+  0%{
+    color:black;
+    font-size:8vw;
+  }
+  100%{
+    color:white;
+    font-size:7vw;
+  }
 }
 
 body {

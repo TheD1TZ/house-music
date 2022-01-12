@@ -11,14 +11,20 @@
 
   <body>
     <h1 class="housemusic">House Music</h1>
-    <audio
-      id="house"
-      controls
-      loop
-      autoplay
+    <iframe
       src="https://cumming.xyz/FUgA2/wOKayiXa61.mp3/raw"
-      type="audio/mpeg"
-    ></audio>
+      allow="autoplay"
+      style="display: none"
+      id="iframeAudio"
+    >
+    </iframe>
+
+    <audio id="player" autoplay loop>
+      <source
+        src="https://cumming.xyz/FUgA2/wOKayiXa61.mp3/raw"
+        type="audio/mp3"
+      />
+    </audio>
 
     <script>
       document.getElementById("house").play();
