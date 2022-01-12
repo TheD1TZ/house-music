@@ -12,16 +12,16 @@
   <body>
     <h1 class="housemusic">House Music</h1>
 
-    <audio class="audio" loop autoplay="autoplay" controls id="audioelement">
-      <source
-        src="https://cumming.xyz/FUgA2/wOKayiXa61.mp3/raw"
-        type="audio/mpeg"
-      />
-    </audio>
+    <audio
+      id="my_audio"
+      src="https://cumming.xyz/FUgA2/wOKayiXa61.mp3/raw"
+      loop="loop"
+    ></audio>
 
     <script>
-      var myAudio = $document.body.getElementById("audioelement");
-      myAudio.play();
+      window.onload = function () {
+        document.getElementById("my_audio").play();
+      };
     </script>
   </body>
 </html>
