@@ -24,20 +24,31 @@ body {
 
 .housemusic {
   color: linear-gradient(270deg, white, black, white, black, white, black, white, black, white, black);
-  -webkit-animation: Kanker 1s infinite;
-  -moz-animation: Kanker 1s infinite;
+  -webkit-animation: huis 1s infinite;
+  -moz-animation: huis 1s infinite;
   animation: huis 0.1s infinite;
   font-size:8vw;
 }
 
 @keyframes huis {
   0%{
-    color:black;
+    color:#ff0000;
+    position:relative;
+    left:80px;
+    top:2px;
     font-size:8vw;
   }
-  100%{
-    color:white;
+  50%{
+    color:#ffe300;
+    position:relative;
+    right:80px;
+    bottom:2px;
     font-size:7vw;
+  }
+  100%{
+    color:#23ff00;
+    font-size:6vw;
+    position:relative;
   }
 }
 
